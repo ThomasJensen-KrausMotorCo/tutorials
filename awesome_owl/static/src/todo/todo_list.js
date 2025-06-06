@@ -2,6 +2,7 @@
 
 import { Component, useState } from "@odoo/owl";
 import { TodoItem } from "./todo_item";
+import { useAutofocus } from "../utils";
 
 export class TodoList extends Component {
     static template = "awesome_owl.TodoList";
@@ -10,6 +11,7 @@ export class TodoList extends Component {
     setup() {
         this.nextId = 0;
         this.todos = useState([]);
+        useAutofocus("input")
     }
 
     addTodo(ev) {
@@ -22,4 +24,12 @@ export class TodoList extends Component {
             ev.target.value = "";
         }
     }
+
+    toggleTodo(todoId) {
+        const todo = this.todos.find((todo) => todo.id === todoId);
+        if (todo) {
+            todo.isCompleted = !todo.isCompleted;
+        }
+    }
 }
+
