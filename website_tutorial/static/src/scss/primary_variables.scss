@@ -1,0 +1,55 @@
+$o-website-values-palettes: (
+   (
+        // Templates
+        'header-template': 'website.default_header',
+        'footer-template': 'website.default_footer',
+        // Colors
+        'color-palettes-name': 'tutorial',
+        // Fonts
+        'font': 'Lato',
+        'headings-font': 'Space Grotesk',
+        'navbar-font': 'Lato',
+        'buttons-font': 'Lato',
+        // Header
+        
+        // Buttons
+        
+        // ...
+   ),
+);
+
+// Fonts
+$o-theme-font-configs: (
+    'Space Grotesk': (
+        'family': ('Space Grotesk', 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif),
+        'url': 'Space+Grotesk:400,500,700',
+        'properties' : (
+            'base': (
+                'font-size-base': 1rem,
+            ),
+        ),
+    ),
+    'Lato': (
+        'family': ('Lato', 'Trebuchet MS', sans-serif),
+        'url': 'Lato:300,300i,400,400i,700,700i',
+        'properties' : (
+            'base': (
+                'font-size-base': 1.125rem,
+            ),
+        ),
+    ),
+);
+
+// Colors
+$o-color-palettes: map-merge($o-color-palettes,
+    (
+        'tutorial': (
+            'o-color-1': #CEF8A1,
+            'o-color-2': #0B8EE6,
+            'o-color-3': #BBE1FA,
+            'o-color-4': #FFFFFF,
+            'o-color-5': #000000,
+        ),
+    )
+);
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'tutorial');

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<!-- HEADER -->
+    <!-- Disable Call-to-action in header // View template in: odoo/addons/website/views/website_templates.xml -->
+    <record id="website.header_call_to_action" model="ir.ui.view">
+        <field name="active" eval="False"/>
+    </record>
+
+<!-- SHOP PAGE -->
+    <!-- Disable Wishlist on shop // View template in: odoo/addons/website_sale_whishlist/views/website_sale_whishlist_template.xml -->
+    <record id="website_sale_wishlist.add_to_wishlist" model="ir.ui.view">
+        <field name="active" eval="False"/>
+    </record>
+
+<!-- PRODUCT PAGE -->
+    <!-- Activate Wishlist on product // View template in: odoo/addons/website_sale_whishlist/views/website_sale_whishlist_template.xml -->
+    <record id="website_sale_wishlist.add_to_wishlist" model="ir.ui.view">
+        <field name="active" eval="True"/>
+    </record>
+    <!-- Enable product categories in the left // View template in: odoo/addons/website_sale/views/templates.xml -->
+    <record id="website_sale.products_categories" model="ir.ui.view">
+        <field name="active" eval="True"/>
+    </record>
+
+</odoo>
