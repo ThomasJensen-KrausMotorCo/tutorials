@@ -9,6 +9,11 @@
     'data': [
         # Options
         'data/presets.xml',
+        # Pages
+        'data/pages/home.xml',
+        'data/pages/test.xml',
+        # Images
+        'data/images.xml',
     ],
     'assets': {
         'web._assets_primary_variables': [

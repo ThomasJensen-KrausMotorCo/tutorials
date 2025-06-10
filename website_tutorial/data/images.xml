@@ -1,12 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
+<!-- ICONS -->
+
+    <record id="img_glasses" model="ir.attachment">
+        <field name="name">Glasses picture</field>
+        <field name="datas" type="base64" file="website_tutorial/static/src/img/content/icons/glasses.svg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_4k" model="ir.attachment">
+        <field name="name">4k picture</field>
+        <field name="datas" type="base64" file="website_tutorial/static/src/img/content/icons/4k.svg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_hand_drone" model="ir.attachment">
+        <field name="name">Hand Drone picture</field>
+        <field name="datas" type="base64" file="website_tutorial/static/src/img/content/icons/hand-drone.svg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_control" model="ir.attachment">
+        <field name="name">Control picture</field>
+        <field name="datas" type="base64" file="website_tutorial/static/src/img/content/icons/control.svg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
 <!-- HOMEPAGE -->
-    <!-- Add drone image in the library -->
 
     <record id="img_drone_robin" model="ir.attachment">
         <field name="name">Drone Robin picture</field>
         <field name="datas" type="base64" file="website_tutorial/static/src/img/content/drone-robin.webp"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_accessories" model="ir.attachment">
+        <field name="name">Accessories picture</field>
+        <field name="datas" type="base64" file="website_tutorial/static/src/img/content/accessories.webp"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_school" model="ir.attachment">
+        <field name="name">School picture</field>
+        <field name="datas" type="base64" file="website_tutorial/static/src/img/content/school.webp"/>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Test -->
+    <record id="page_test" model="website.page">
+        <field name="name">Test</field>
+        <field name="is_published" eval="True"/>
+        <field name="key">website_tutorial.page_test</field>
+        <field name="url">/test</field>
+        <field name="type">qweb</field>
+        <field name="arch" type="xml">
+            <t t-name="website_tutorial.page_test">
+                <t t-call="website.layout">
+                    <!-- Title -->
+                    <t t-set="additional_title">One step beyond the hooprizon | Tutorial</t>
+                    <!-- Content -->
+                    <div id="wrap" class="oe_structure">
+                        <p>Test</p>
+                    <section class="s_three_columns pt32 pb32 o_colored_level o_cc o_cc2 o_snippet_invisible o_conditional_hidden" data-vcss="001" data-snippet="s_three_columns" data-name="Columns" data-visibility="conditional">
+                        <div class="container">
+                            <div class="row d-flex align-items-stretch">
+                                <div class="s_col_no_bgcolor col-lg-4">
+                                    <div class="card text-bg-white h-100">
+                                        <img class="card-img-top" src="/web/image/website.s_three_columns_default_image_1" alt="" loading="lazy" data-mimetype="image/jpeg" data-original-id="914" data-original-src="/web/image/website.library_image_11" data-mimetype-before-conversion="image/jpeg"/>
+                                        <div class="card-body">
+                                            <h3 class="card-title o_default_snippet_text">Feature One</h3>
+                                            <p class="card-text o_default_snippet_text">Adapt these three columns to fit your design need. To duplicate, delete or move columns, select the column and use the top icons to perform your action.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="s_col_no_bgcolor col-lg-4">
+                                    <div class="card text-bg-white h-100">
+                                        <img class="card-img-top" src="/web/image/website.s_three_columns_default_image_2" alt="" loading="lazy" data-mimetype="image/jpeg" data-original-id="915" data-original-src="/web/image/website.library_image_13" data-mimetype-before-conversion="image/jpeg"/>
+                                        <div class="card-body">
+                                            <h3 class="card-title o_default_snippet_text">Feature Two</h3>
+                                            <p class="card-text o_default_snippet_text">To add a fourth column, reduce the size of these three columns using the right icon of each block. Then, duplicate one of the columns to create a new one as a copy.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="s_col_no_bgcolor col-lg-4">
+                                    <div class="card text-bg-white h-100">
+                                        <img class="card-img-top" src="/web/image/website.s_three_columns_default_image_3" alt="" loading="lazy" data-mimetype="image/jpeg" data-original-id="916" data-original-src="/web/image/website.library_image_07" data-mimetype-before-conversion="image/jpeg"/>
+                                        <div class="card-body">
+                                            <h3 class="card-title o_default_snippet_text">Feature Three</h3>
+                                            <p class="card-text o_default_snippet_text">Delete the above image or replace it with a picture that illustrates your message. Click on the picture to change its <em class="o_default_snippet_text">rounded corner</em> style.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section><section class="s_color_blocks_2 o_colored_level" data-snippet="s_color_blocks_2" data-name="Big Boxes" style="background-image: none;">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-6 o_cc o_cc3 text-center o_colored_level pt256 border rounded" style="background-image: none; border-width: 7px !important; border-radius: 10px !important; border-style: dashed !important;">
+                                    <i class="fa fa-shield fa-5x m-3"/>
+                                    <h2 class="o_default_snippet_text">A color block</h2>
+                                    <p class="o_default_snippet_text">Color blocks are a simple and effective way to <b class="o_default_snippet_text">present and highlight your content</b>. Choose an image or a color for the background. You can even resize and duplicate the blocks to create your own layout. Add images or icons to customize the blocks.</p>
+                                    <a href="#" class="btn btn-primary o_default_snippet_text">More Details</a>
+                                </div>
+                                <div class="col-lg-6 o_cc o_cc5 text-center o_colored_level pt0" style="background-image: none;">p
+                                    <i class="fa fa-cube fa-5x m-3"/>
+                                    <h2 class="o_default_snippet_text">Another color block</h2>
+                                    <p class="o_default_snippet_text">Color blocks are a simple and effective way to <b class="o_default_snippet_text">present and highlight your content</b>. Choose an image or a color for the background. You can even resize and duplicate the blocks to create your own layout. Add images or icons to customize the blocks.</p>
+                                    <a href="#" class="btn btn-primary o_default_snippet_text">More Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section></div>
+                </t>
+            </t>
+        </field>
+    </record>
+</odoo>
