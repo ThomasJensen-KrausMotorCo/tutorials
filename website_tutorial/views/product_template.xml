@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+  <template id="product_show_sku" inherit_id="website_sale.product">
+    <xpath expr="//h1[@t-field='product.name']" position="after">
+      <p t-if="product.default_code" class="text-muted small">
+        SKU: <t t-esc="product.default_code"/>
+      </p>
+    </xpath>
+  </template>
+</odoo>

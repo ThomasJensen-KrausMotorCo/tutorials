@@ -14,6 +14,8 @@
         'data/pages/test.xml',
         # Images
         'data/images.xml',
+        # Templates
+        'views/product_template.xml'
     ],
     'assets': {
         'web._assets_primary_variables': [
